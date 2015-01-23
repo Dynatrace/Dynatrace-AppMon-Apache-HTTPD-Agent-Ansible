@@ -12,7 +12,7 @@ This role makes the Agent available to the Apache HTTP Server by injecting a *Lo
 
 The role is available via:
 
-- [Ansible Galaxy](https://galaxy.ansible.com/list#/roles/)
+- [Ansible Galaxy](https://galaxy.ansible.com/list#/roles/2681)
 - [GitHub](https://github.com/Dynatrace/Dynatrace-Apache-HTTPServer-Agent-Ansible)
 
 ## Requirements
