@@ -2,7 +2,7 @@
 
 An [Ansible](http://www.ansible.com) role for automated deployments of the [Dynatrace](http://www.bit.ly/dttrial) Agent for the Apache HTTP Server.
 
-This role makes the Agent available to the Apache HTTP Server by injecting a *LoadModule* directive into the HTTP Server's config file. Additionally, the HTTP Server's init.d (LSB) script is manipulated such that the Apache HTTP Server service is started only after the Dynatrace Web Server Agent service has started (can be disabled).
+This role makes the Agent available to the Apache HTTP Server by injecting a *LoadModule* directive into the HTTP Server's config file. Optionally, the HTTP Server's init.d (LSB) script is manipulated such that the Apache HTTP Server service is started only after the Dynatrace Web Server Agent service has started.
 
 **Note**: You have to restart the Apache HTTP Server after placing the agent.
 
