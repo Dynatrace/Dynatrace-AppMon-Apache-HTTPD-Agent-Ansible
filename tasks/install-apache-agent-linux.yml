@@ -5,6 +5,7 @@
     line='LoadModule dtagent_module "{{ dynatrace_apache_agent_linux_agent_path }}"'
     insertafter=EOF
     state={{ dynatrace_apache_agent_state }}
+    backup=yes
   sudo: yes
 
 - name: Update the apache2 init.d script so that the Dynatrace Apache Agent is started after the Dynatrace Web Server Agent
@@ -14,6 +15,7 @@
     line='\1\2 dynaTraceWebServeragent'
     backrefs=yes
     state={{ dynatrace_apache_agent_state }}
+    backup=yes
   when: dynatrace_apache_agent_do_patch_apache_initd_script
   sudo: yes
 
@@ -24,5 +26,6 @@
     line='\1\2 dynaTraceWebServeragent'
     backrefs=yes
     state={{ dynatrace_apache_agent_state }}
+    backup=yes
   when: dynatrace_apache_agent_do_patch_apache_initd_script
   sudo: yes
