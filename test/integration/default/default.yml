@@ -1,0 +1,4 @@
+---
+- hosts: test-kitchen
+  roles:
+  - dynatrace.Dynatrace-Apache-HTTPServer-Agent
