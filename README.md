@@ -26,8 +26,11 @@ As defined in ```defaults/main.yml```:
 | *dynatrace_apache_agent_linux_agent_path*               | /opt/dynatrace/agent/lib64/libdtagent.so | The path to the Agent library. |
 | *dynatrace_apache_agent_linux_apache_config_path*       | /etc/apache2/apache2.conf                | The path to the Apache HTTP Server's config file. |
 | *dynatrace_apache_agent_linux_apache_initd_script_path* | /etc/init.d/apache2                      | The path to the Apache HTTP Server's init.d script. |
-| *dynatrace_apache_agent_do_patch_apache_initd_script*   | yes                                      | Whether the init.d script shall be patched so that the Apache HTTP Server service is started only after the Dynatrace Web Server Agent service has started, or not.
+| *dynatrace_apache_agent_do_patch_apache_initd_script*   | yes                                      | Whether the init.d script shall be patched so that the Apache HTTP Server service is started only after the Dynatrace Web Server Agent service has started, or not. |
+| *dynatrace_apache_agent_name*                           | apache-dtwsagent                         | The name the Web Server Agent as it appears in Dynatrace. |
 | *dynatrace_apache_agent_state*                          | present                                  | Whether the Agent shall be ```present``` or ```absent```. |
+
+dynatrace_apache_agent_name
 
 ## Example Playbook
 

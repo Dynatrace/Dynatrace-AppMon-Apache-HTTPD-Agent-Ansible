@@ -4,5 +4,5 @@ dynatrace_apache_agent_linux_apache_config_path: /etc/apache2/apache2.conf
 dynatrace_apache_agent_linux_apache_initd_script_path: /etc/init.d/apache2
 
 dynatrace_apache_agent_do_patch_apache_initd_script: yes
-
+dynatrace_apache_agent_name: apache-dtwsagent
 dynatrace_apache_agent_state: present
