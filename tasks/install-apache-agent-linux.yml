@@ -7,25 +7,3 @@
     state={{ dynatrace_apache_agent_state }}
     backup=yes
   sudo: yes
-
-- name: Update the apache2 init.d script so that the Dynatrace Apache Agent is started after the Dynatrace Web Server Agent
-  lineinfile: >
-    dest="{{ dynatrace_apache_agent_linux_apache_initd_script_path }}"
-    regexp='^(# Required-Start:)(.*?)( dynaTraceWebServeragent)?$'
-    line='\1\2 dynaTraceWebServeragent'
-    backrefs=yes
-    state={{ dynatrace_apache_agent_state }}
-    backup=yes
-  when: dynatrace_apache_agent_do_patch_apache_initd_script
-  sudo: yes
-
-- name: Update the apache2 init.d script so that the Dynatrace Apache Agent is stopped before the Dynatrace Web Server Agent
-  lineinfile: >
-    dest="{{ dynatrace_apache_agent_linux_apache_initd_script_path }}"
-    regexp='^(# Required-Stop:)(.*?)( dynaTraceWebServeragent)?$'
-    line='\1\2 dynaTraceWebServeragent'
-    backrefs=yes
-    state={{ dynatrace_apache_agent_state }}
-    backup=yes
-  when: dynatrace_apache_agent_do_patch_apache_initd_script
-  sudo: yes
