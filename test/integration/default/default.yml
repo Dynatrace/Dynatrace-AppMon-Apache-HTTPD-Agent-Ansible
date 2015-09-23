@@ -11,10 +11,10 @@
 
   roles:
   - role: dynatrace.Dynatrace-Apache-HTTPServer-Agent
-    dynatrace_wsagent_linux_installer_file_url: http://downloads.dynatracesaas.com/6.2/dynatrace-wsagent-linux-x64.tar
+    dynatrace_wsagent_linux_installer_file_url: http://10.0.2.2/dynatrace/dynatrace-wsagent.tar
     when: ansible_system == "Linux" and ansible_pkg_mgr == "apt"
   - role: dynatrace.Dynatrace-Apache-HTTPServer-Agent
     dynatrace_apache_agent_linux_apache_config_path: /etc/httpd/conf/httpd.conf
     dynatrace_apache_agent_linux_apache_initd_script_path: /etc/init.d/httpd
-    dynatrace_wsagent_linux_installer_file_url: http://downloads.dynatracesaas.com/6.2/dynatrace-wsagent-linux-x64.tar
+    dynatrace_wsagent_linux_installer_file_url: http://10.0.2.2/dynatrace/dynatrace-wsagent.tar
     when: ansible_system == "Linux" and ansible_pkg_mgr == "yum"
