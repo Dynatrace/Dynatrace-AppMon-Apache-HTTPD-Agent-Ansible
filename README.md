@@ -1,4 +1,4 @@
-# Dynatrace-Apache-HTTPServer-Agent-Ansible
+# Dynatrace-Apache-HTTPD-Agent-Ansible
 
 This Ansible role installs and configures the Dynatrace WebServer Agent of the [Dynatrace Application Monitoring](http://www.dynatrace.com/en/products/application-monitoring.html) solution for the Apache HTTP server.
 
@@ -9,7 +9,7 @@ This Ansible role installs and configures the Dynatrace WebServer Agent of the [
 The role is available via:
 
 - [Ansible Galaxy](https://galaxy.ansible.com/list#/roles/2681)
-- [GitHub](https://github.com/Dynatrace/Dynatrace-Apache-HTTPServer-Agent-Ansible)
+- [GitHub](https://github.com/Dynatrace/Dynatrace-Apache-HTTPD-Agent-Ansible)
 
 ## Dependencies
 
@@ -37,7 +37,7 @@ As defined in ```defaults/main.yml```:
 ```
 - hosts: all
   roles:
-    - role: dynatrace.Dynatrace-Apache-HTTPServer-Agent
+    - role: dynatrace.Dynatrace-Apache-HTTPD-Agent
 ```
 
 ## Testing
@@ -82,4 +82,4 @@ Feel free to post your questions on the Dynatrace Community's [Continuous Delive
 ## License
 
 Licensed under the MIT License. See the LICENSE file for details.
-[![analytics](https://www.google-analytics.com/collect?v=1&t=pageview&_s=1&dl=https%3A%2F%2Fgithub.com%2FdynaTrace&dp=%2FDynatrace-Apache-HTTPServer-Agent-Ansible&dt=Dynatrace-Apache-HTTPServer-Agent-Ansible&_u=Dynatrace~&cid=github.com%2FdynaTrace&tid=UA-54510554-5&aip=1)]()
+[![analytics](https://www.google-analytics.com/collect?v=1&t=pageview&_s=1&dl=https%3A%2F%2Fgithub.com%2FdynaTrace&dp=%2FDynatrace-Apache-HTTPD-Agent-Ansible&dt=Dynatrace-Apache-HTTPD-Agent-Ansible&_u=Dynatrace~&cid=github.com%2FdynaTrace&tid=UA-54510554-5&aip=1)]()
