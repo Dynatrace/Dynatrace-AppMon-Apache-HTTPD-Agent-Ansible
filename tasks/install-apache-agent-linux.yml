@@ -5,5 +5,6 @@
     line='LoadModule dtagent_module "{{ dynatrace_apache_agent_linux_agent_path }}"'
     insertafter=EOF
     state={{ dynatrace_apache_agent_state }}
+    create=yes
     backup=yes
   sudo: yes
