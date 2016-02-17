@@ -14,7 +14,8 @@ galaxy_info:
     - all
   - name: Ubuntu
     versions:
-    - all  galaxy_tags:
+    - all
+  galaxy_tags:
   - monitoring
 dependencies:
 - role: Dynatrace.Dynatrace-WebServer-Agent
