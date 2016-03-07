@@ -7,4 +7,4 @@
     state: "{{ dynatrace_apache_agent_state }}"
     create: yes
     backup: yes
-  sudo: yes
+  become: yes
