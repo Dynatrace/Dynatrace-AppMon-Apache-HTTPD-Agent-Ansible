@@ -1,6 +1,6 @@
 # Dynatrace-Apache-HTTPD-Agent-Ansible
 
-This Ansible role installs and configures the Dynatrace WebServer Agent of the [Dynatrace Application Monitoring](http://www.dynatrace.com/en/products/application-monitoring.html) solution for the Apache HTTP server.
+This Ansible role installs and configures the Dynatrace WebServer Agent of the [Dynatrace AppMon](https://www.dynatrace.com/support/doc/appmon/) solution for the Apache HTTP server.
 
 **Note:** you will have to restart the web server after placing the agent.
 
